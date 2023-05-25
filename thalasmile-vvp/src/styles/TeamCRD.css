@@ -1,0 +1,123 @@
+#ownerz{
+    /* background: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#tm-cd{
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#tm-cd #prlx{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    display: inline-block;
+    overflow: hidden;
+    /* gap: 15px; */
+}
+#ownerz>*{
+    width: 25% !important;
+    overflow: hidden;
+}
+#tm-cd #prlx:hover .soc{
+    /* opacity: 1; */
+    bottom: 0;
+    left: 0;
+    z-index: 111;
+}
+#tm-cd #prlx img{
+    width: 100%;
+    transition: 0.35s ease-in;
+}
+#tm-cd #prlx:hover::after{
+
+    background: rgba(1, 1, 1, 0.38);
+}
+#tm-cd #prlx::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 99%;
+    width: 100%;
+    z-index: 11;
+    transition: 0.15s ease-in-out;
+    background: transparent;
+
+}
+#tm-cd #prlx:hover img{
+    transform: scale(1.1);
+}
+#tm-cd #prlx .soc > *{font-size: 1.85rem;
+color: #fff; }
+#tm-cd #prlx .soc{
+    width: 120%;
+    background: var(--blue);
+    gap: 22.5px;
+    padding: 14px 28px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    bottom: -45px;
+    left: -15px;
+    /* justify-content: center; */
+    
+    /* opacity: 0; */
+    transition: 0.15s ease-in-out;
+    /* flex-direction: column; */
+    /* gap: 15px; */
+}
+#tr-name{
+    font-size: 1.45rem;
+    color: #242424;
+    font-family: var(--font8);
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.35s ease-in-out;
+}
+#tr-post{
+    font-size: 1.2rem;
+    font-family: var(--font8);
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    transition: 0.35s ease-in-out;
+
+}
+#trainerzz > *{
+    width: 22%;
+}
+#trainerzz{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+}
+
+#trainerzz #tm-cd{
+    margin-top: 12vh;
+
+}
+#trainerzz #tm-cd:nth-child(2),
+#trainerzz #tm-cd:nth-child(6){
+margin-top: -12vh !important;
+}
+#trainerzz #tm-cd:nth-child(3),
+#trainerzz #tm-cd:nth-child(7){
+margin-top: 0vh !important;
+}
+#tm-cd:hover #tr-name{
+    color: var(--blue);
+    /* transform: scale(1.1); */
+}
+#tm-cd:hover #tr-post{
+    color: #636363;
+    /* transform: scale(1.1); */
+}

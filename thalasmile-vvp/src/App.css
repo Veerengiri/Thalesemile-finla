@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marcellus&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --font1: 'Anton', sans-serif;
+  --font2: 'Michroma', sans-serif;
+  --font3: 'Poppins', sans-serif;
+  --font4: 'Prompt', sans-serif;
+  --font5: 'Russo One', sans-serif;
+  --font6: 'Saira', sans-serif;
+  --font7: 'Tilt Warp', cursive;
+  --font8: 'Kanit', sans-serif;
+  --font9:  'Marcellus', serif;
+  --blue: #2490EB;
+  --blue2: #07366A;
+  --blue3: #042242;
+}
+
+* {
+  font-family: var(--font9);
+  /* border: 5px solid gold; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #191919;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  box-shadow: 0 0 50px 5px var(--blue2);
+  /* outline: 1px solid slategrey; */
+}
+body{
+width: 100vw;
+overflow-x: hidden;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: #191919;
+  background: var(--green);
+}
+
+::selection {
+  color: #191919;
+  background: var(--green);
+}
+
+
+/* DEVERAJ */
+.signup {
+  /* background-color: #31343B; */
+  background-color: #252830;
+  color: white;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: var(--font9);
+  display: grid;
+  background: linear-gradient(to left, #1f1625f3, #0f1834ea),
+      url('https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/flexbox/gd.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-items: center;
+}
+
+.form {
+  background-color: #252525b2;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 30vw;
+  height: auto;
+  backdrop-filter: blur(3px);
+  border: solid rgb(105, 105, 105) 0.5px;
+}
+
+.form>* {
+  width: 100%;
+  border: none;
+}
+
+.form input,
+.form select {
+  color: white;
+  margin-top: 5px;
+  height: 2rem;
+  font-size: 1.15rem;
+  font-family: var(--font9);
+  border-radius: 3px;
+  background-color: rgba(95, 95, 95, 0.559);
+  padding-left: 10px;
+}
+
+.form label {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  font-family: var(--font9);
+  font-weight: 500;
+}
+
+.btn-log {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font9);
+}
+
+.subtn {
+  border: none;
+  color: white;
+  margin-top: 10px;
+  font-family: 600;
+  height: 2rem;
+  border-radius: 3px;
+  background-color: var(--blue);
+  width: 50%;
+  font-size: 1rem;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font9);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-family: var(--font9);
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  border: none;
+  background-color: var(--blue);
+}
+
+.uline {
+  width: 100%;
+  border-bottom: solid rgb(95, 95, 95) 0.1px;
+}
+
+.confirm input {
+  margin: 0;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.org {
+  font-size: 2rem;
+  color: var(--blue);
+  font-family: var(--font9);
+}
+
+.login_que {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.forgot_pass {
+  font-size: 0.9rem;
+}
+
+.login_link {
+  text-decoration: none;
+  color: var(--blue);
+}
